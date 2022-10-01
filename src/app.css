@@ -1,26 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
-  margin: 0;
-  padding: 0;
   background: #223;
-}
-
-#test-results {
-  margin: 0;
-  padding: 2px 16px;
-  box-shadow: inset 0 -1px 5px #0003;
-}
-
-#test-results.fail {
-  background: #fdd;
-}
-
-#test-results.pass {
-  background: #dff;
 }
 
 h1 {
