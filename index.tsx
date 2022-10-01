@@ -1,5 +1,5 @@
 import {render, h} from "preact"
 import "./test-results"
-import {App} from "./App"
+import {App} from "./src/App"
 
-render(<App/>, document.getElementById("app")!)
+render(<App />, document.getElementById("app")!)

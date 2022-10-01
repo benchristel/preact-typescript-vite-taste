@@ -9,5 +9,5 @@ export function App() {
 test("App", {
   "renders a greeting"() {
     expect(App().props.children, equals, "Hello from Preact!")
-  }
+  },
 })
