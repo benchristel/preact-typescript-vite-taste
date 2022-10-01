@@ -1,0 +1,19 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    // Typecheck all files, not just open ones.
+    // https://spin.atomicobject.com/2019/11/20/type-checking-typescript-visual-studio-code/
+    {
+      "type": "typescript",
+      "tsconfig": "tsconfig.json",
+      "option": "watch",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
