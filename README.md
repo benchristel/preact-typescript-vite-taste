@@ -13,14 +13,20 @@
 
 ### Server and Typechecker
 
+```
+yarn dev
+yarn ts
+```
+
 - Opening the project in **Visual Studio Code** automatically starts the dev server and `typescript` typechecker.
 - The dev server runs at http://localhost:5173 (the port number is `vite` in 1337... sort of).
 - Output appears in the terminal pane (accessed via `ctrl+~`).
 - Type errors also show up in the problems pane (`ctrl+shift+M`).
 - The server and typechecker stop automatically when VS Code quits.
-- To run the dev server and typechecker without VS Code, `yarn dev` and `yarn ts`.
 
 ### Tests
+
+http://localhost:5173
 
 - **Tests** run in the browser. The test report appears at the top of the screen.
 - The page will refresh (re-running the tests) whenever you save a file.
@@ -28,8 +34,9 @@
 
 ### Formatting
 
-- The code formatter is `prettier`.
 - Files get auto-formatted when you commit, so you'll never check in inconsistently-formatted code. To disable this behavior, delete `.husky/pre-commit`.
+- To format all files, run `yarn format`.
+- The code formatter is `prettier`. See `.prettierrc` for configuration.
 
 ## Building for production
 
