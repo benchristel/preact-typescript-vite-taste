@@ -1,3 +1,5 @@
+import "./test-results.css"
+
 if ((import.meta as any).env.DEV) {
   import("@benchristel/taste")
     .then(({getAllTests, runTests, formatTestResultsAsText}) =>
