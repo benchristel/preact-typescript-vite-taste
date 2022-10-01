@@ -1,0 +1,20 @@
+{
+  "name": "preact-typescript-vite-taste",
+  "version": "1.0.0",
+  "description": "Template app",
+  "main": "index.html",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "@benchristel/taste": "^0.3.2",
+    "preact": "^10.11.0"
+  },
+  "scripts": {
+    "setup": "yarn install; yarn run husky install"
+  }
+}
