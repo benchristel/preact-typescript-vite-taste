@@ -17,6 +17,6 @@
   "scripts": {
     "dev": "yarn vite",
     "setup": "yarn install; yarn run husky install",
-    "ts": "yarn tsc --watch"
+    "ts": "yarn tsc --watch --noEmit"
   }
 }
