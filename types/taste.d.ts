@@ -12,5 +12,5 @@ declare module "@benchristel/taste" {
   export function runTests(a: TestSet): Promise
   export function getAllTests(): TestSet
   export function formatTestResultsAsText(results: any): string
-  export function createSuite(): { test: any; getAllTests: any }
+  export function createSuite(): {test: any; getAllTests: any}
 }
