@@ -52,3 +52,7 @@ serve dist
 ```
 
 You can then view your app at http://localhost:3000.
+
+## Deploying
+
+To deploy your built app to GitHub Pages, go to the `Pages` tab of your repo's settings and change the directory to deploy from to `/docs`.
