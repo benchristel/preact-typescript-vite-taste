@@ -1,4 +1,5 @@
 import {defineConfig} from "vite"
+import inject from "@rollup/plugin-inject"
 
 export default defineConfig({
   // Base path for references to asset files in the built code.
@@ -9,7 +10,20 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "h",
     jsxFragment: "Fragment",
+    jsxInject: 'import {h, Fragment} from "preact"',
   },
+  plugins: [
+    inject({
+      include: "src/**/*.{ts,tsx,js,jsx}",
+      test: ["@benchristel/taste", "test"],
+      expect: ["@benchristel/taste", "expect"],
+      is: ["@benchristel/taste", "is"],
+      equals: ["@benchristel/taste", "equals"],
+      not: ["@benchristel/taste", "not"],
+      which: ["@benchristel/taste", "which"],
+      debug: ["@benchristel/taste", "debug"],
+    }),
+  ],
   resolve: {
     alias: {
       "react": "preact/compat",

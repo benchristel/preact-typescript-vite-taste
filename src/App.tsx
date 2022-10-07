@@ -1,5 +1,3 @@
-import {h} from "preact"
-import {test, expect, equals} from "@benchristel/taste"
 import "./app.css"
 
 export function App() {
