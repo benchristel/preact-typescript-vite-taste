@@ -1,3 +1,4 @@
+import {h} from "preact"
 import "./app.css"
 
 export function App() {
