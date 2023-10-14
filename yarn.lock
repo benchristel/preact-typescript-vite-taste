@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@benchristel/taste@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@benchristel/taste/-/taste-0.3.2.tgz#4a757460da8ef8032b64f2a8cae8a8f2cbc7a4fb"
-  integrity sha512-HfDWt1L4PbRAmfE2yHTXcoNLH3IJu7E4q2IJtSND3PuOJNmAS9lwnjKlnXE0CfwXfGKENtKeox9aAF9ucLGWdA==
+"@benchristel/taste@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@benchristel/taste/-/taste-0.5.0.tgz#c595e9937cede23feaec3081f7333e6c766073c2"
+  integrity sha512-xr0QL76NohYOMG94O1Tr9N4piH3SzVztznbbZyUDZRZjivcqqUqVyBuQV/KvNUUg4dbntlMEAkidMLB9whHTIg==
 
 "@esbuild/android-arm@0.15.10":
   version "0.15.10"
