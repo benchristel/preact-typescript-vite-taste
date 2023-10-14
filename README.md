@@ -26,11 +26,12 @@ yarn ts
 
 ### Tests
 
-http://localhost:5173
-
 - **Tests** run in the browser. The test report appears at the top of the screen.
 - The page will refresh (re-running the tests) whenever you save a file.
 - The tests and test report are completely removed from production builds.
+- You can write tests in-source, or in files named `*.test.*`, e.g. `example.test.ts`. The test file pattern is configured in `src/test-results.ts`.
+
+The test framework is `@benchristel/taste`. For more information, see [@benchristel/taste on NPM](https://www.npmjs.com/package/@benchristel/taste).
 
 ### Formatting
 
@@ -44,14 +45,16 @@ http://localhost:5173
 yarn build
 ```
 
-To smoketest your production build before deploying it, I recommend installing `serve`:
+This outputs files in the `dist` directory, which is symlinked to `docs`
+for easy deployment to GitHub Pages.
+
+To smoketest your production build locally before deploying it, run:
 
 ```
-yarn global add serve
-serve dist
+yarn smoke
 ```
 
-You can then view your app at http://localhost:3000.
+This runs an HTTP server and opens the built app in your browser.
 
 ## Deploying
 
