@@ -6,19 +6,21 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.4",
+    "cheerio": "^1.0.0-rc.12",
     "http-server": "^14.1.1",
     "husky": "^8.0.1",
+    "preact-render-to-string": "^6.2.2",
     "prettier": "^2.7.1",
     "rollup": "^2.0.0",
     "typescript": "^4.8.4",
-    "vite": "^3.1.4"
+    "vite": "4.4.11"
   },
   "dependencies": {
     "@benchristel/taste": "0.5.0",
     "preact": "^10.11.0"
   },
   "scripts": {
-    "build": "yarn vite build",
+    "build": "yarn vite build; bun devtools/ssr.js",
     "dev": "yarn vite",
     "format": "node_modules/.bin/prettier --write .",
     "setup": "yarn install; yarn run husky install",

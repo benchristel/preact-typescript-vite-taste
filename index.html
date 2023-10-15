@@ -7,6 +7,14 @@
   <body>
     <code><pre id="test-results"></pre></code>
     <div id="app"></div>
-    <script type="module" src="src/index.tsx"></script>
+    <script type="module">
+      import {render, h} from "preact"
+      import {App} from "./src/App"
+      import "./src/test-results"
+      import "./src/reset.css"
+      import "./src/global-types"
+
+      render(h(App, {}), document.getElementById("app"))
+    </script>
   </body>
 </html>
