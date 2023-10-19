@@ -55,7 +55,7 @@ To smoketest your production build locally before deploying it, run:
 yarn smoke
 ```
 
-This runs an HTTP server and opens the built app in your browser.
+This runs an HTTP server (via [`vite preview`](https://vitejs.dev/guide/cli.html#vite-preview)) and opens the built app in your browser.
 
 ## Deploying
 

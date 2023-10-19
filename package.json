@@ -6,7 +6,6 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-inject": "^4.0.4",
-    "http-server": "^14.1.1",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "rollup": "^2.0.0",
@@ -22,7 +21,7 @@
     "dev": "yarn vite",
     "format": "node_modules/.bin/prettier --write .",
     "setup": "yarn install; yarn run husky install",
-    "smoke": "node_modules/.bin/http-server -p8080 -c-1 -o docs",
+    "smoke": "yarn vite preview --open",
     "ts": "yarn tsc --watch --noEmit"
   }
 }
