@@ -49,7 +49,7 @@ yarn build
 This outputs files in the `dist` directory, which is symlinked to `docs`
 for easy deployment to GitHub Pages.
 
-To smoketest your production build locally before deploying it, run:
+To [smoketest](<https://en.wikipedia.org/wiki/Smoke_testing_(electrical)>) your production build locally before deploying it, run:
 
 ```
 yarn smoke
