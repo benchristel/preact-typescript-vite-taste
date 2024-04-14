@@ -20,7 +20,7 @@
   "scripts": {
     "build": "yarn vite build",
     "dev": "yarn vite",
-    "format": "node_modules/.bin/prettier --write .",
+    "format": "devtools/format.sh",
     "setup": "yarn install; yarn run husky install",
     "smoke": "yarn vite preview --open",
     "ts": "yarn tsc --watch --noEmit"

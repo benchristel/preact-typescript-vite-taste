@@ -6,4 +6,8 @@ cd "$(dirname "$0")/.."
 node_modules/.bin/tsfmt -r
 # Format all other files with Prettier
 # (configured to ignore TS via .prettierignore).
-node_modules/.bin/prettier --ignore-unknown --write "$@"
+if [ $# -eq 0 ]; then
+  node_modules/.bin/prettier --ignore-unknown --write .
+else
+  node_modules/.bin/prettier --ignore-unknown --write "$@"
+fi
