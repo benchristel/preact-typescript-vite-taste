@@ -11,9 +11,9 @@ const ignores = ["dist/**/*", "docs/**/*", ".tsbuild/**/*"]
 const indent = 2
 
 const styleRules = {
-  "@stylistic/array-bracket-newline": ["error", {multiline: true}],
+  "@stylistic/array-bracket-newline": ["error", "consistent"],
   "@stylistic/array-bracket-spacing": ["error", "never"],
-  "@stylistic/array-element-newline": ["error", {multiline: true}],
+  "@stylistic/array-element-newline": ["error", "consistent"],
   "@stylistic/arrow-parens": ["error", "always"],
   "@stylistic/arrow-spacing": ["error", {before: true, after: true}],
   "@stylistic/block-spacing": ["error", "always"],
