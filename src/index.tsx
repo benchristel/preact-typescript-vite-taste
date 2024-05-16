@@ -5,6 +5,6 @@ import "./reset.css"
 import "./global-types"
 
 render(
-  <App />,
-  document.getElementById("app")!,
+    <App />,
+    document.getElementById("app")!,
 )
