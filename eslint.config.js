@@ -1,7 +1,6 @@
 // @ts-check
 
 import stylistic from "@stylistic/eslint-plugin"
-import stylisticTs from "@stylistic/eslint-plugin-ts"
 // @ts-expect-error - can't find type declarations for "@typescript-eslint/parser"
 import parserTs from "@typescript-eslint/parser"
 
@@ -39,8 +38,6 @@ const styleRules = {
     "@stylistic/jsx-curly-spacing": ["error", {when: "never"}],
     "@stylistic/jsx-equals-spacing": ["error", "never"],
     "@stylistic/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
-    "@stylistic/jsx-indent": ["error", indent, {checkAttributes: true, indentLogicalExpressions: true}],
-    "@stylistic/jsx-indent-props": ["error", indent],
     "@stylistic/jsx-max-props-per-line": "off",
     "@stylistic/jsx-newline": "off",
     "@stylistic/jsx-one-expression-per-line": "off",
@@ -49,7 +46,7 @@ const styleRules = {
     "@stylistic/jsx-self-closing-comp": "off",
     "@stylistic/jsx-sort-props": "off",
     "@stylistic/jsx-tag-spacing": "error",
-    "@stylistic/jsx-wrap-multilines": "error",
+    "@stylistic/jsx-wrap-multilines": ["error", {declaration: "parens-new-line", assignment: "parens-new-line", return: "parens-new-line", arrow: "parens-new-line"}],
     "@stylistic/key-spacing": "error",
     "@stylistic/keyword-spacing": "error",
     "@stylistic/line-comment-position": "off",
@@ -97,7 +94,6 @@ const styleRules = {
     "@stylistic/switch-colon-spacing": "error",
     "@stylistic/template-curly-spacing": ["error", "never"],
     "@stylistic/template-tag-spacing": ["error", "never"],
-    "@stylistic/ts/keyword-spacing": "error",
     "@stylistic/type-annotation-spacing": "error",
     "@stylistic/type-generic-spacing": "error",
     "@stylistic/type-named-tuple-spacing": "error",
@@ -114,7 +110,6 @@ export default [
         languageOptions: {parser: parserTs},
         plugins: {
             "@stylistic": stylistic,
-            "@stylistic/ts": stylisticTs,
         },
     },
 ]

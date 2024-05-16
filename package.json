@@ -9,7 +9,6 @@
     "@eslint/js": "^9.0.0",
     "@rollup/plugin-inject": "^4.0.4",
     "@stylistic/eslint-plugin": "^1.7.0",
-    "@stylistic/eslint-plugin-ts": "^1.7.0",
     "@typescript-eslint/parser": "^7.6.0",
     "eslint": "^9.0.0",
     "husky": "^8.0.1",
