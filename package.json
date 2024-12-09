@@ -23,11 +23,11 @@
     "preact": "^10.11.0"
   },
   "scripts": {
-    "build": "yarn vite build",
-    "dev": "yarn vite",
+    "build": "vite build",
+    "dev": "vite",
     "format": "devtools/format.sh",
-    "setup": "yarn install; yarn run husky install",
-    "smoke": "yarn vite preview --open",
-    "ts": "yarn tsc --watch --noEmit"
+    "setup": "yarn install; husky install",
+    "smoke": "vite preview --open",
+    "ts": "tsc --watch --noEmit"
   }
 }
