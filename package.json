@@ -25,7 +25,6 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "format": "devtools/format.sh",
     "setup": "yarn install; husky install",
     "smoke": "vite preview --open",
     "ts": "tsc --watch --noEmit"
