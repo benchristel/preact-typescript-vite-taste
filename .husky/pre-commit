@@ -1,14 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
-[ -z "$FILES" ] && exit 0
+cd "$(dirname "$0")/.."
 
-# Format all selected files
-echo "[.husky/pre-commit] Formatting changed files..."
-echo "$FILES" | xargs ./devtools/format.sh
-
-# Add back the modified/prettified files to staging
-echo "$FILES" | xargs git add
-
-exit 0
+devtools/list-changed-files.sh | xargs devtools/lint.sh

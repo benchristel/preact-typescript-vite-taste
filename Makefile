@@ -6,8 +6,17 @@ build:
 dev:
 	node_modules/.bin/vite
 
+lint:
+	devtools/list-changed-files.sh | xargs devtools/lint.sh
+
 format:
-	devtools/format.sh
+	devtools/list-changed-files.sh | xargs devtools/format.sh
+
+lint-all:
+	devtools/lint.sh .
+
+format-all:
+	devtools/format.sh .
 
 setup:
 	yarn install

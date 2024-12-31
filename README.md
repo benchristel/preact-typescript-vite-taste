@@ -39,9 +39,12 @@ The test framework is `@benchristel/taste`. For more information, see [@benchris
 
 ### Formatting
 
-- Files get auto-formatted when you commit, so you'll never check in inconsistently-formatted code. To disable this behavior, delete `.husky/pre-commit`.
-- To format all files, run `make format`.
-- The code formatter is `prettier`. See `.prettierrc` for configuration.
+- The linter and formatter run on changed files when you `git commit`. If problems are detected, the commit will fail with a descriptive message. You can fix the formatting with `make format` and try again.
+
+  To disable the pre-commit style check, delete `.husky/pre-commit`.
+
+- To format all files (not just the ones you've changed since the last commit), run `make format-all`.
+- [ESLint](https://eslint.org/) is used to format JavaScript and TypeScript files. [Prettier](https://prettier.io/) is used for other files. See `eslint.config.js` and `.prettierrc` for configuration.
 
 ## Building for production
 
