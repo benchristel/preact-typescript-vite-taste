@@ -2,9 +2,9 @@
 
 cd "$(dirname "$0")/.."
 
-echo "Formatting files:" "$@"
+echo "Fixing files:" "$@"
 
-# Format .js, .jsx, .ts, and .tsx files with eslint
+# Autofix .js, .jsx, .ts, and .tsx files with eslint
 node_modules/.bin/eslint --fix --no-warn-ignored "$@"
 # Format all other files with Prettier
 # (configured to ignore TS via .prettierignore).

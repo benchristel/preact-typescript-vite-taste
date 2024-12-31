@@ -9,14 +9,14 @@ dev:
 lint:
 	@devtools/list-changed-files.sh | xargs devtools/lint.sh
 
-format:
-	@devtools/list-changed-files.sh | xargs devtools/format.sh
+fix:
+	@devtools/list-changed-files.sh | xargs devtools/fix.sh
 
 lint-all:
 	@devtools/lint.sh .
 
-format-all:
-	@devtools/format.sh .
+fix-all:
+	@devtools/fix.sh .
 
 setup:
 	@yarn install

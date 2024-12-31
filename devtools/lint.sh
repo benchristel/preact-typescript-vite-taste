@@ -6,7 +6,7 @@ echo "Linting files:" "$@"
 
 FAIL=false
 
-# Format .js, .jsx, .ts, and .tsx files with eslint.
+# Autofix .js, .jsx, .ts, and .tsx files with eslint.
 # Format all other files with Prettier (configured to ignore TS via
 # .prettierignore).
 if ! node_modules/.bin/eslint --no-warn-ignored "$@"; then

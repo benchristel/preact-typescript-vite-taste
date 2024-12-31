@@ -37,13 +37,13 @@ package manager being used.
 
 The test framework is `@benchristel/taste`. For more information, see [@benchristel/taste on NPM](https://www.npmjs.com/package/@benchristel/taste).
 
-### Formatting
+### Linting and formatting
 
-- The linter and formatter run on changed files when you `git commit`. If problems are detected, the commit will fail with a descriptive message. You can fix the formatting with `make format` and try again.
+- The linter and formatter run on changed files when you `git commit`. If problems are detected, the commit will fail with a descriptive message. You can fix the formatting with `make fix` and try again.
 
   To disable the pre-commit style check, delete `.husky/pre-commit`.
 
-- To format all files (not just the ones you've changed since the last commit), run `make format-all`.
+- To fix formatting and lint in all files (not just the ones you've changed since the last commit), run `make fix-all`.
 - [ESLint](https://eslint.org/) is used to format JavaScript and TypeScript files. [Prettier](https://prettier.io/) is used for other files. See `eslint.config.js` and `.prettierrc` for configuration.
 
 ## Building for production
