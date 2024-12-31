@@ -3,6 +3,9 @@
 build:
 	@node_modules/.bin/vite build
 
+deps:
+	@yarn install
+
 dev:
 	@node_modules/.bin/vite
 

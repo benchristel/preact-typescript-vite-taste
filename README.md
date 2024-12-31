@@ -1,16 +1,39 @@
 # Preact, TypeScript, Vite, @benchristel/taste
 
-## Setup
+## Creating a new project from this template repo
 
-1. Click the "Use this template" button on GitHub
-2. Clone the created repo
-3. If this is your first ever JavaScript project, welcome! See [setting up a JavaScript development environment](https://gist.github.com/benchristel/ede6615bf1c6cf91fd5cda70f02f57d7) to get started.
-4. Run the one-time setup script to install dependencies and git hooks:
+1. Click the "Use this template" button on GitHub.
+2. Clone the created repo.
+
+## Development
+
+### Summary
+
+```bash
+make setup    # one-time setup
+make deps     # update NodeJS packages
+make dev      # run the dev server
+make ts       # run the typechecker in watch mode
+make lint     # check code for problems
+make fix      # autofix (some) problems, e.g. formatting
+make build    # build for deployment
+make smoke    # serve the built code locally
+```
+
+### One-time setup
+
+1. If this is your first ever JavaScript project, welcome! See [setting up a JavaScript development environment](https://gist.github.com/benchristel/ede6615bf1c6cf91fd5cda70f02f57d7) to get started.
+
+   You will need:
+
+   - `node` >= 20.9.0
+   - `yarn` 1.x.x, >= 1.22.22
+   - GNU `make` 4.2.1 or compatible version
+
+2. Run the one-time setup script to install dependencies and git hooks:
    ```sh
    make setup
    ```
-
-## Development
 
 `make` is used for dev tools, to decouple them from the specific NodeJS
 package manager being used.
