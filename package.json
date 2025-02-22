@@ -16,7 +16,7 @@
     "rollup": "2.x.x",
     "typescript": "4.x.x",
     "typescript-formatter": "7.x.x",
-    "vite": "5.x.x"
+    "vite": "6.x.x"
   },
   "dependencies": {
     "@benchristel/taste": "0.6.x",
