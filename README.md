@@ -11,7 +11,7 @@
 
 ```bash
 make setup    # one-time setup
-make deps     # update NodeJS packages
+make deps     # install/update NodeJS packages listed in package.json
 make dev      # run the dev server
 make ts       # run the typechecker in watch mode
 make lint     # check code for problems
