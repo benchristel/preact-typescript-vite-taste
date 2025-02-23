@@ -15,8 +15,9 @@ const styleRules = {
     "@stylistic/array-element-newline": ["error", "consistent"],
     "@stylistic/arrow-parens": ["error", "always"],
     "@stylistic/arrow-spacing": ["error", {before: true, after: true}],
-    // @stylistic/block-spacing is turned off because inline object types like
-    // {foo: string} are mistakenly interpreted as blocks by this rule.
+    // 2025-02-23: @stylistic/block-spacing is turned off because inline
+    // object types like {foo: string} are mistakenly interpreted as blocks
+    // by this rule.
     "@stylistic/block-spacing": "off",
     "@stylistic/brace-style": ["error", "1tbs"],
     "@stylistic/comma-dangle": ["error", "always-multiline"],
