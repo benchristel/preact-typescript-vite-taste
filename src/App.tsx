@@ -1,7 +1,7 @@
-import {h} from "preact"
+import {h, type JSX} from "preact"
 import "./app.css"
 
-export function App() {
+export function App(): JSX.Element {
     return <h1>Hello from Preact!</h1>
 }
 
